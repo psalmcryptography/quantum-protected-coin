@@ -1,0 +1,15 @@
+{
+  "name": "Quantum",
+  "symbol": "QUANTUM",
+  "address": "AUd3rULBqpeUMUcoguBc8afg68g2hjj7SegB9AJsKCyQ",
+  "fingerprint": "15f22c99b64e31521c288bbb0e98ad486e71b049c6e5916c93b7270fb34711fa",
+  "provider": "IBM Quantum",
+  "backend": "ibm_marrakesh",
+  "ibmJobId": "db470m84qg6s73c1o67g",
+  "qubits": 64,
+  "shots": 128,
+  "launchedAt": "2026-10-09",
+  "x": "https://x.com/QuantumCoin_sol",
+  "verificationPost": "https://x.com/QuantumCoin_sol/status/2108516320262111709",
+  "revealPost": "https://x.com/QuantumCoin_sol/status/2108428385789563124"
+}

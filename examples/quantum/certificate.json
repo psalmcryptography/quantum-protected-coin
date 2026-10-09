@@ -1,0 +1,49 @@
+{
+  "standard": "QPC-1",
+  "name": "Quantum",
+  "symbol": "QUANTUM",
+  "address": "AUd3rULBqpeUMUcoguBc8afg68g2hjj7SegB9AJsKCyQ",
+  "fingerprint": "15f22c99b64e31521c288bbb0e98ad486e71b049c6e5916c93b7270fb34711fa",
+  "seedTag": "quantum-mint-seed-v1:",
+  "quantum": {
+    "provider": "IBM Quantum",
+    "backend": "ibm_marrakesh",
+    "jobId": "db470m84qg6s73c1o67g",
+    "qubits": 64,
+    "shots": 128,
+    "bits": 8192,
+    "circuit": null
+  },
+  "randomness": {
+    "Frequency (monobit)": {
+      "value": "50.61% ones",
+      "p": 0.26922272529570884,
+      "pass": true
+    },
+    "Runs": {
+      "value": "4107 (≈4095 expected)",
+      "p": 0.7974928728745211,
+      "pass": true
+    },
+    "Longest run": {
+      "value": "17 (≈13 expected)",
+      "p": null,
+      "pass": true
+    },
+    "Byte entropy": {
+      "value": "7.782 / 8.000 bits",
+      "p": null,
+      "pass": true
+    },
+    "Per-qubit bias": {
+      "value": "1 of 64 qubits flagged",
+      "p": null,
+      "pass": true
+    }
+  },
+  "verify": [
+    "sha256(bits) == fingerprint",
+    "ed25519_pubkey(sha256(\"quantum-mint-seed-v1:\" + bits)) == address"
+  ],
+  "generatedAt": "2026-10-09T12:00:48.029Z"
+}

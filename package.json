@@ -1,0 +1,57 @@
+{
+  "name": "quantum-protected-coin",
+  "version": "1.0.0",
+  "description": "Create Solana coins whose address is born from real quantum-computer measurements — and let anyone verify it.",
+  "main": "src/core.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "node --test",
+    "verify:quantum": "node bin/qpc.js verify -b examples/quantum/bits.txt -f 15f22c99b64e31521c288bbb0e98ad486e71b049c6e5916c93b7270fb34711fa -a AUd3rULBqpeUMUcoguBc8afg68g2hjj7SegB9AJsKCyQ",
+    "demo": "node bin/qpc.js launch -c examples/quantum/coin.json --dry-run -k examples/demo-wallet.DO-NOT-FUND.json"
+  },
+  "keywords": [
+    "solana",
+    "quantum",
+    "ibm-quantum",
+    "qiskit",
+    "spl-token",
+    "token-2022",
+    "memecoin",
+    "provably-fair",
+    "randomness"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.15",
+    "@solana/spl-token-metadata": "^0.1.6",
+    "@solana/web3.js": "^1.99.0",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "type": "module",
+  "bin": {
+    "qpc": "bin/qpc.js"
+  },
+  "exports": {
+    ".": "./src/core.js",
+    "./stats": "./src/stats.js",
+    "./mint": "./src/mint.js",
+    "./certificate": "./src/certificate.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "config",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/florianvates/quantum-protected-coin"
+  }
+}

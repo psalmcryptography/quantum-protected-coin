@@ -1,0 +1,15 @@
+{
+  "name": "Quantum",
+  "symbol": "QUANTUM",
+  "uri": "",
+  "decimals": 6,
+  "supply": 1000000000,
+  "bits": "examples/quantum/bits.txt",
+  "expectedFingerprint": "15f22c99b64e31521c288bbb0e98ad486e71b049c6e5916c93b7270fb34711fa",
+  "ibmJobId": "db470m84qg6s73c1o67g",
+  "backend": "ibm_marrakesh",
+  "program": "token-2022",
+  "revokeMint": true,
+  "revokeFreeze": true,
+  "revokeUpdate": false
+}

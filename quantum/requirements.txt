@@ -1,0 +1,5 @@
+qiskit>=1.2
+qiskit-ibm-runtime>=0.30
+# for quantum/verify.py
+pynacl>=1.5
+base58>=2.1

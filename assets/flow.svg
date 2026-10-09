@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="QPC pipeline: quantum measurement, commit, launch, reveal, verify">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070a1c"/><stop offset="1" stop-color="#140a26"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#9d8cff"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="330" rx="18" fill="url(#bg)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif" text-anchor="middle">
+    <text x="600" y="42" font-size="20" font-weight="700" fill="#e6e9ff">The QPC-1 pipeline</text>
+
+    <g stroke-width="2" fill="#0d1233">
+      <rect x="30"  y="80" width="200" height="150" rx="14" stroke="#7cf7ff"/>
+      <rect x="265" y="80" width="200" height="150" rx="14" stroke="#8fb6ff"/>
+      <rect x="500" y="80" width="200" height="150" rx="14" stroke="#9d8cff"/>
+      <rect x="735" y="80" width="200" height="150" rx="14" stroke="#c88cff"/>
+      <rect x="970" y="80" width="200" height="150" rx="14" stroke="#ff7ad9"/>
+    </g>
+
+    <g font-size="30"><text x="130" y="125">⚛️</text><text x="365" y="125">🔒</text><text x="600" y="125">🚀</text><text x="835" y="125">📜</text><text x="1070" y="125">✅</text></g>
+    <g font-size="17" font-weight="700" fill="#ffffff">
+      <text x="130" y="160">1 · Measure</text><text x="365" y="160">2 · Commit</text><text x="600" y="160">3 · Launch</text><text x="835" y="160">4 · Reveal</text><text x="1070" y="160">5 · Verify</text>
+    </g>
+    <g font-size="13" fill="#b9c0ec">
+      <text x="130" y="186">64 qubits × 128 shots</text><text x="130" y="205">on IBM Quantum</text>
+      <text x="365" y="186">publish SHA-256(bits)</text><text x="365" y="205">bits stay secret</text>
+      <text x="600" y="186">mint at address from</text><text x="600" y="205">ed25519(seed of bits)</text>
+      <text x="835" y="186">publish raw bits</text><text x="835" y="205">+ IBM job id</text>
+      <text x="1070" y="186">anyone recomputes</text><text x="1070" y="205">hash → address</text>
+    </g>
+
+    <g stroke="#9d8cff" stroke-width="2" marker-end="url(#arr)">
+      <line x1="232" y1="155" x2="262" y2="155"/><line x1="467" y1="155" x2="497" y2="155"/>
+      <line x1="702" y1="155" x2="732" y2="155"/><line x1="937" y1="155" x2="967" y2="155"/>
+    </g>
+
+    <text x="600" y="282" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#7cf7ff">address = base58( ed25519_pub( SHA-256("quantum-mint-seed-v1:" ‖ bits) ) )</text>
+    <text x="600" y="308" font-size="13" fill="#8a90b8">The commitment is posted before the address can exist, so the address cannot be chosen, ground or faked.</text>
+  </g>
+</svg>

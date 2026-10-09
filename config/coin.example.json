@@ -1,0 +1,15 @@
+{
+  "name": "My Quantum Coin",
+  "symbol": "MQC",
+  "uri": "https://example.com/mqc-metadata.json",
+  "decimals": 6,
+  "supply": 1000000000,
+  "bits": "quantum/out/bits.txt",
+  "expectedFingerprint": "<sha256 you published before launch>",
+  "ibmJobId": "<IBM Quantum job id>",
+  "backend": "ibm_marrakesh",
+  "program": "token-2022",
+  "revokeMint": true,
+  "revokeFreeze": true,
+  "revokeUpdate": false
+}
